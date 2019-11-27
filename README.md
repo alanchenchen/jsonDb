@@ -10,7 +10,7 @@ a small db controller saving with json file
 
 > Version: 0.0.1
 
-> Date: 2019/11/26
+> Date: 2019/11/27
 
 ## purpose
 
@@ -27,6 +27,9 @@ a small db controller saving with json file
 2. 原本最理想的情况是，读写都实现分片，但是在写入文件时遇到[坑](./doc/mistakes.md)了。。。
 3. lowdb由于集成了lodash，所以在处理数据上会非常好用，jsonDb没有，但是提供了一个query方法自定义查询，如果你觉得还是不够的话。自己用lodash再次处理吧。
 4. 目前不支持并发操作，后期可能会通过event emitter保证下次读取会等待当前写入完成之后再触发。
+
+## installation
+`npm install --save @alanchenchen/json-db` or `yarn add @alanchenchen/json-db`
 
 ## usage
 1. `git clone https://github.com/alanchenchen/jsonDb.git`
