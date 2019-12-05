@@ -127,7 +127,7 @@ dbCreator()
     .read(dbPath， "user")
     .then(db => {
         // 如果db中不存在user.alan.name，则会给出警告，不做任何处理
-        db.delete("user.alan.name", "alan");
+        db.delete("user.alan.name");
     });
 ```
 
@@ -193,6 +193,6 @@ dbCreator()
 
 ### 小tips
 1. 尽可能多用链式写法，比如`user.name.age`这种。
-2. 如果需要增删查改数组类型的数据，还是使用`user.list`属性写法，已经对数组操作做了兼容处理。
+2. 如果需要增删查改数组类型的数据，还是使用`user.list.1`属性写法，已经对数组操作做了兼容处理。
 3. 目前只支持读取一个顶层key的内存空间，如果你需要操作`user`的数据后再操作`list`的数据，一定要保证先write再read读取另外的内存空间。
 4. 目前不支持并发操作，很有可能会造成io读写异常，必须要保证内存被写入后再读取。
