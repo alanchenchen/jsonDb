@@ -1,8 +1,8 @@
 # jsonDb
 
 
-![](https://img.shields.io/npm/v/@alanchenchen/jsonDb.svg)
-![](https://img.shields.io/npm/dt/@alanchenchen/jsonDb.svg)
+![](https://img.shields.io/npm/v/@alanchenchen/json-db.svg)
+![](https://img.shields.io/npm/dt/@alanchenchen/json-db.svg)
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 a small db controller saving with json file
